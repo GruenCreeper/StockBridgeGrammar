@@ -1,0 +1,14 @@
+* text=auto
+*.cs text
+*.csproj text
+*.md text
+*.json text
+*.py text
+*.ps1 text
+*.xml text
+*.gha binary
+*.gh binary
+*.zip binary
+
+.tmp export-ignore
+release export-ignore

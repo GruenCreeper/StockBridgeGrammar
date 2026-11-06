@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S_long_30",
+    "type": "linear",
+    "length": 3.0,
+    "width": 0.12,
+    "height": 0.16,
+    "material": "reclaimed timber, healthy",
+    "count": 20
+  },
+  {
+    "id": "S_med_18",
+    "type": "linear",
+    "length": 1.8,
+    "width": 0.10,
+    "height": 0.14,
+    "material": "reclaimed timber, healthy",
+    "count": 30
+  },
+  {
+    "id": "S_short_12",
+    "type": "linear",
+    "length": 1.2,
+    "width": 0.08,
+    "height": 0.12,
+    "material": "reclaimed timber, healthy",
+    "count": 30
+  }
+]

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the version used in your work."
+type: software
+title: StockBridgeGrammar
+authors:
+  - name: GruenCreeper
+    website: "https://github.com/GruenCreeper"
+version: 1.0.0
+date-released: 2026-11-06
+repository-code: "https://github.com/GruenCreeper/StockBridgeGrammar"
+url: "https://github.com/GruenCreeper/StockBridgeGrammar/releases/tag/v1.0.0"
+abstract: "A Rhino 8 and Grasshopper plugin for stock-responsive bridge geometry, material assignment, and shape-grammar transformations."
+keywords:
+  - Grasshopper
+  - Rhino
+  - shape grammar
+  - reclaimed timber
+  - stock-constrained design

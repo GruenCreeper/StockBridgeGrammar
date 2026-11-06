@@ -1,0 +1,47 @@
+{
+  "splitMemberByStockLength": {
+    "maxBridgesPerNode": 2
+  },
+  "addConnectionPoint": {
+    "extraAnchors": 2
+  },
+  "removeConnectionPoint": {},
+  "triangulateBay": {},
+  "densifyWithShortStock": {},
+  "fanOutLoadPath": {
+    "fanCount": 3
+  },
+  "removeRedundantMember": {},
+  "shiftNodeToMatchStock": {},
+  "articulateChainToStock": {
+    "foldDown": false
+  },
+  "connectNodeToStock": {
+    "maxConnectionsPerNode": 2
+  },
+  "mergeSplitChain": {},
+  "addNodeToStock": {
+    "minHeight": 0.01
+  },
+  "removeNode": {},
+  "dissolveNodeToDiagonal": {
+    "pairBy": "stock"
+  },
+  "crossBracePanel": {
+    "sides": [
+      "M1",
+      "M2"
+    ]
+  },
+  "uncrossPanel": {},
+  "dedupeMembers": {
+    "removeZeroLength": true
+  },
+  "splitEdgeToPoint": {
+    "to": [
+      "P1",
+      "P2"
+    ]
+  },
+  "relocateMember": {}
+}

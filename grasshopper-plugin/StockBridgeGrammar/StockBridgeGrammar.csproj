@@ -1,0 +1,35 @@
+<!-- Rhino 8 / Grasshopper plugin. Build and installation instructions are in README.md. -->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>StockBridgeGrammar</AssemblyName>
+    <RootNamespace>StockBridgeGrammar</RootNamespace>
+    <!-- Produce a .gha instead of .dll so Grasshopper loads it. -->
+    <TargetExt>.gha</TargetExt>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildProjectDirectory)=/StockBridgeGrammar</PathMap>
+    <Version>1.0.0</Version>
+    <Authors>GruenCreeper</Authors>
+    <Product>StockBridgeGrammar</Product>
+    <Description>Stock-responsive shape grammar for bridge structures in Rhino / Grasshopper. Recognises existing Rhino geometry as a graph, runs material assignment, applies grammar rules.</Description>
+    <Configurations>Debug;Release</Configurations>
+    <!-- Suppress package compatibility warning NU1701 for this .NET Framework target. -->
+    <NoWarn>NU1701</NoWarn>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Rhino supplies the runtime assemblies; reference them only for compilation. -->
+    <PackageReference Include="Grasshopper" Version="8.0.23304.9001">
+      <IncludeAssets>compile; build</IncludeAssets>
+    </PackageReference>
+    <!-- Rhino supplies Newtonsoft.Json at runtime. -->
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

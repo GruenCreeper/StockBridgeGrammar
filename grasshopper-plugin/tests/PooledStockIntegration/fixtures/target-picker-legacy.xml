@@ -1,0 +1,475 @@
+<Fragment name="component">
+  <items count="4">
+    <item name="Description" type_name="gh_string" type_code="10">Choose a Target ID for Apply Grammar Rule WITHOUT searching JSON by hand. Pick a MEMBER (by mismatch rank, member id, index, or a selected Rhino curve), or a NODE (by_point = a Rhino point snapped to the nearest node, or by_node_id) — node modes feed removeNode / dissolveNodeToDiagonal / uncrossPanel. The Tp output forwards the original Target Point for Apply's spatial addNodeToStock placement; connect Tp separately from T.</item>
+    <item name="InstanceGuid" type_name="gh_guid" type_code="9">e226aa23-f137-42a3-a33e-194055ae22c8</item>
+    <item name="Name" type_name="gh_string" type_code="10">StockBridge Target Picker</item>
+    <item name="NickName" type_name="gh_string" type_code="10">SBTarget</item>
+  </items>
+  <chunks count="16">
+    <chunk name="Attributes">
+      <items count="1">
+        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+          <X>0</X>
+          <Y>0</Y>
+          <W>150</W>
+          <H>20</H>
+        </item>
+      </items>
+    </chunk>
+    <chunk name="param_input" index="0">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Graph JSON from Recognize or Assign.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0f2926ab-310f-4df1-914f-bfbe625429d7</item>
+        <item name="Name" type_name="gh_string" type_code="10">Graph JSON</item>
+        <item name="NickName" type_name="gh_string" type_code="10">G</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="1">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Mismatches JSON from Assign Inventory (optional, for by_mismatch_rank).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">a589f851-e47e-4258-bed5-8e72cf2db252</item>
+        <item name="Name" type_name="gh_string" type_code="10">Mismatches JSON</item>
+        <item name="NickName" type_name="gh_string" type_code="10">M</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="2">
+                    <item name="null_string" type_name="gh_bool" type_code="1">false</item>
+                    <item name="string" type_name="gh_string" type_code="10">[]</item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="2">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">by_mismatch_rank | by_member_id | by_index | by_curve | by_point | by_node_id</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b28014a-d97d-47d7-925a-37fcc1ddf19a</item>
+        <item name="Name" type_name="gh_string" type_code="10">Mode</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Mo</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="2">
+                    <item name="null_string" type_name="gh_bool" type_code="1">false</item>
+                    <item name="string" type_name="gh_string" type_code="10">by_mismatch_rank</item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="3">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Used when Mode = by_member_id (a member id) OR by_node_id (a node id).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5742d80d-607f-40e1-b054-0c6b999d4271</item>
+        <item name="Name" type_name="gh_string" type_code="10">Member ID</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Id</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="2">
+                    <item name="null_string" type_name="gh_bool" type_code="1">false</item>
+                    <item name="string" type_name="gh_string" type_code="10"></item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="4">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Used when Mode = by_mismatch_rank (0 = most severe).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">8fc832a1-2504-4d3c-bd6f-28816870ed2f</item>
+        <item name="Name" type_name="gh_string" type_code="10">Mismatch Rank</item>
+        <item name="NickName" type_name="gh_string" type_code="10">R</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="1">
+                    <item name="number" type_name="gh_int32" type_code="3">0</item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="5">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Used when Mode = by_index (0..members.Count-1).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">0a36dd50-528b-4280-8b6b-21eb9b78cbb5</item>
+        <item name="Name" type_name="gh_string" type_code="10">Member Index</item>
+        <item name="NickName" type_name="gh_string" type_code="10">I</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="1">
+                    <item name="number" type_name="gh_int32" type_code="3">0</item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="6">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Deprecated role classification input. Retained for canvas compatibility; ignored.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">729e35d0-60bc-40b5-a219-59a7ac026951</item>
+        <item name="Name" type_name="gh_string" type_code="10">Role</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Ro</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="2">
+                    <item name="null_string" type_name="gh_bool" type_code="1">false</item>
+                    <item name="string" type_name="gh_string" type_code="10"></item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="7">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Used when Mode = by_curve. Select ONE Rhino curve/line; it is matched to the member whose endpoints coincide with the curve's endpoints (falls back to nearest midpoint).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">4f4fea2d-e97b-462c-bf36-c6d0fe56f61b</item>
+        <item name="Name" type_name="gh_string" type_code="10">Target Curve</item>
+        <item name="NickName" type_name="gh_string" type_code="10">C</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="8">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Desired approximate new-node location for addNodeToStock: connect the Tp output to Apply.Tp. The original coordinate is forwarded in every Mode. Mode=by_point additionally selects the nearest existing NODE id on T for node-editing rules.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">73d77114-8374-4563-b205-bda770b9cf6b</item>
+        <item name="Name" type_name="gh_string" type_code="10">Target Point</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Pt</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="0">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">The chosen target id.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">67797f24-604f-4da5-a910-a165c1ea1aea</item>
+        <item name="Name" type_name="gh_string" type_code="10">Target ID</item>
+        <item name="NickName" type_name="gh_string" type_code="10">T</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="1">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">member / node / system.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">f30a1269-c11f-415f-915e-4d7dd7e4951c</item>
+        <item name="Name" type_name="gh_string" type_code="10">Target Type</item>
+        <item name="NickName" type_name="gh_string" type_code="10">TT</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="2">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Human-readable target summary.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">5b761538-85f4-401d-9042-3f1dd479d9b9</item>
+        <item name="Name" type_name="gh_string" type_code="10">Target Summary</item>
+        <item name="NickName" type_name="gh_string" type_code="10">S</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="3">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Suggested rule id if the source was a mismatch.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2c7faed5-7d95-4933-bc65-c9efa35b657a</item>
+        <item name="Name" type_name="gh_string" type_code="10">Suggested Rule</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Sr</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="4">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">Validation notes.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">fee8f758-9672-499a-9406-830fd03b1b8b</item>
+        <item name="Name" type_name="gh_string" type_code="10">Warnings</item>
+        <item name="NickName" type_name="gh_string" type_code="10">W</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="5">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Original Target Point coordinate, independent of the selected ID. Connect to Apply.Target Point (Tp) to guide addNodeToStock's spatial location.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">91c520d6-d3e6-4aeb-b4c6-9ce53ba1a64d</item>
+        <item name="Name" type_name="gh_string" type_code="10">Target Point</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Tp</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+  </chunks>
+</Fragment>

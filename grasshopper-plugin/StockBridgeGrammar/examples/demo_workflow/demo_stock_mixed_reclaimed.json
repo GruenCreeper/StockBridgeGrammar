@@ -1,0 +1,7 @@
+[
+  { "id": "DM_long_28",  "type": "linear", "length": 2.8, "width": 0.12, "height": 0.16, "material": "reclaimed beam",   "count": 6  },
+  { "id": "DM_med_18",   "type": "linear", "length": 1.8, "width": 0.10, "height": 0.14, "material": "reclaimed timber", "count": 10 },
+  { "id": "DM_med_15",   "type": "linear", "length": 1.5, "width": 0.08, "height": 0.12, "material": "reclaimed timber", "count": 12 },
+  { "id": "DM_short_10", "type": "linear", "length": 1.0, "width": 0.08, "height": 0.10, "material": "reclaimed short",  "count": 20 },
+  { "id": "DM_short_07", "type": "linear", "length": 0.7, "width": 0.06, "height": 0.08, "material": "reclaimed short",  "count": 28 }
+]

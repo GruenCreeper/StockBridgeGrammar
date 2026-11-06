@@ -1,0 +1,11 @@
+[
+  {
+    "id": "S2",
+    "type": "linear",
+    "length": 2,
+    "width": 0.08,
+    "height": 0.12,
+    "material": "example timber",
+    "count": 3
+  }
+]

@@ -1,0 +1,467 @@
+<Fragment name="component">
+  <items count="4">
+    <item name="Description" type_name="gh_string" type_code="10">Check each member against stock length and section capacity using supplied axial forces. Failing members receive a suggested rule and target ID.</item>
+    <item name="InstanceGuid" type_name="gh_guid" type_code="9">65340d5a-0410-479a-b565-47b96a234319</item>
+    <item name="Name" type_name="gh_string" type_code="10">StockBridge Section Check</item>
+    <item name="NickName" type_name="gh_string" type_code="10">SBCheck</item>
+  </items>
+  <chunks count="19">
+    <chunk name="Attributes">
+      <items count="1">
+        <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+          <X>0</X>
+          <Y>0</Y>
+          <W>150</W>
+          <H>20</H>
+        </item>
+      </items>
+    </chunk>
+    <chunk name="param_input" index="0">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Graph JSON (members, ideally with assignedStockId).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">55d04b13-52f0-4481-9673-f879b15a35c3</item>
+        <item name="Name" type_name="gh_string" type_code="10">Graph JSON</item>
+        <item name="NickName" type_name="gh_string" type_code="10">G</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="1">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">2</item>
+        <item name="Description" type_name="gh_string" type_code="10">One shared inventory across ALL input branches. Accepts merged SBItem JSON, multiple stock arrays, or SBStockBuild.J. Stock entries are pooled, not evaluated as separate scenarios.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">091571dc-4927-4106-a684-4a9538b4b9cc</item>
+        <item name="Name" type_name="gh_string" type_code="10">Stock JSON</item>
+        <item name="NickName" type_name="gh_string" type_code="10">S</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="2">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">Member ids that carry a force (parallel to Forces).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">bfcd15e3-41e4-4829-ae53-dbb98afd8f68</item>
+        <item name="Name" type_name="gh_string" type_code="10">Member IDs</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Id</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="3">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">Axial force per member id (kN, +tension/−compression). Parallel to Member IDs.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ebfe83c8-dd65-453f-a41d-934629695bf5</item>
+        <item name="Name" type_name="gh_string" type_code="10">Forces</item>
+        <item name="NickName" type_name="gh_string" type_code="10">F</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="4">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Fallback allowable stress (kPa) when a stock piece has none.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">369d6138-0381-4d75-86d5-54a88ef4b004</item>
+        <item name="Name" type_name="gh_string" type_code="10">Default σ</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Sig</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="1">
+                    <item name="number" type_name="gh_double" type_code="6">12345</item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_input" index="5">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Effective-length factor for the compression-buckling check (1.0 pinned-pinned, 0.5 fixed-fixed, 2.0 cantilever).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">2b686476-65bc-4e22-ad6d-98a3f79111af</item>
+        <item name="Name" type_name="gh_string" type_code="10">Eff. Length k</item>
+        <item name="NickName" type_name="gh_string" type_code="10">k</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">true</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="2">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+        <chunk name="PersistentData">
+          <items count="1">
+            <item name="Count" type_name="gh_int32" type_code="3">1</item>
+          </items>
+          <chunks count="1">
+            <chunk name="Branch" index="0">
+              <items count="2">
+                <item name="Count" type_name="gh_int32" type_code="3">1</item>
+                <item name="Path" type_name="gh_string" type_code="10">{0}</item>
+              </items>
+              <chunks count="1">
+                <chunk name="Item" index="0">
+                  <items count="1">
+                    <item name="number" type_name="gh_double" type_code="6">1</item>
+                  </items>
+                </chunk>
+              </chunks>
+            </chunk>
+          </chunks>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="0">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">Member id per row.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">39c1e5e5-8fe4-4d6e-9a89-0dc6d76c496a</item>
+        <item name="Name" type_name="gh_string" type_code="10">Member IDs</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Id</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="1">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">ok / tooLong / insufficientInventory / overStressed / buckling / noForce.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">200719d3-4197-44bd-973c-3e7fe65ce551</item>
+        <item name="Name" type_name="gh_string" type_code="10">Status</item>
+        <item name="NickName" type_name="gh_string" type_code="10">St</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="2">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">axial stress / allowable (&gt;1 = over-stressed; −1 if no force).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">b33d8d94-6615-4607-ab0d-b85c08c34453</item>
+        <item name="Name" type_name="gh_string" type_code="10">Stress Ratio</item>
+        <item name="NickName" type_name="gh_string" type_code="10">R</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="3">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">|F| / Euler load for compression members (&gt;1 = buckles; −1 if N/A).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">3c017727-3067-4e7f-a04b-5767e1d50337</item>
+        <item name="Name" type_name="gh_string" type_code="10">Buckling Ratio</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Br</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="4">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">splitEdgeToPoint / addNodeToStock / (empty if ok).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">494f13dd-2c44-4011-a953-966d01efdcf4</item>
+        <item name="Name" type_name="gh_string" type_code="10">Suggested Rule</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Ru</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="5">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">Target id to feed the suggested rule.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">9c5e9af1-7314-4ce9-af9e-05cddd61cdb2</item>
+        <item name="Name" type_name="gh_string" type_code="10">Suggested Target</item>
+        <item name="NickName" type_name="gh_string" type_code="10">T</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="6">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Human-readable report of all failing members.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">23af9ee9-b67b-4a4d-b869-e58772c1462d</item>
+        <item name="Name" type_name="gh_string" type_code="10">Summary</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Sum</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="7">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">Unique physical stock-piece id chosen per member (for example S1#2).</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">da178eac-953f-4257-9fa0-94fdd00de281</item>
+        <item name="Name" type_name="gh_string" type_code="10">Assigned Stock</item>
+        <item name="NickName" type_name="gh_string" type_code="10">As</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="8">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Graph JSON with assignedStockId and assignedStockPieceId written back.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">dcbf22c3-5785-42da-8eaf-0826fe22980f</item>
+        <item name="Name" type_name="gh_string" type_code="10">Updated Graph JSON</item>
+        <item name="NickName" type_name="gh_string" type_code="10">G2</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="9">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">The ONE rule to apply next (the first failing member). Wire to Apply.R. Empty when all ok.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">71b66ee1-c00b-4c37-98b3-4bb6103ab51f</item>
+        <item name="Name" type_name="gh_string" type_code="10">Next Rule</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Nr</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="10">
+      <items count="6">
+        <item name="Description" type_name="gh_string" type_code="10">Target for Next Rule (the failing member id). Wire to Apply.T. Empty when all ok.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">aa712bde-d9f3-4ed0-9aed-f4b096fb9b60</item>
+        <item name="Name" type_name="gh_string" type_code="10">Next Target</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Nt</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+    <chunk name="param_output" index="11">
+      <items count="7">
+        <item name="Access" type_name="gh_int32" type_code="3">1</item>
+        <item name="Description" type_name="gh_string" type_code="10">One line PER member: status | length | force | assigned stock | stress &amp; buckling ratios | suggested rule. Panel it to see every member's assignment &amp; reason.</item>
+        <item name="InstanceGuid" type_name="gh_guid" type_code="9">ca1827de-8abf-43b9-aa49-3fee86e58c4b</item>
+        <item name="Name" type_name="gh_string" type_code="10">Detail</item>
+        <item name="NickName" type_name="gh_string" type_code="10">Dt</item>
+        <item name="Optional" type_name="gh_bool" type_code="1">false</item>
+        <item name="SourceCount" type_name="gh_int32" type_code="3">0</item>
+      </items>
+      <chunks count="1">
+        <chunk name="Attributes">
+          <items count="1">
+            <item name="Bounds" type_name="gh_drawing_rectanglef" type_code="35">
+              <X>0</X>
+              <Y>0</Y>
+              <W>150</W>
+              <H>20</H>
+            </item>
+          </items>
+        </chunk>
+      </chunks>
+    </chunk>
+  </chunks>
+</Fragment>

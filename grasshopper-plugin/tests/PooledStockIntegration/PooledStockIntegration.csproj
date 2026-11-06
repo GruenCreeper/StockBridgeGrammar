@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <NuGetAudit>false</NuGetAudit>
+    <RhinoSystem Condition="'$(RhinoSystem)' == ''">$(ProgramFiles)/Rhino 8/System</RhinoSystem>
+    <GrasshopperDir>$(RhinoSystem)/../Plug-ins/Grasshopper</GrasshopperDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../StockBridgeGrammar/Core/*.cs" Link="Core/%(Filename)%(Extension)" />
+    <Compile Include="../../StockBridgeGrammar/Models/*.cs" Link="Models/%(Filename)%(Extension)" />
+    <Compile Include="../../StockBridgeGrammar/Utils/*.cs" Link="Utils/%(Filename)%(Extension)" />
+    <Compile Include="../../StockBridgeGrammar/Components/*.cs" Link="Components/%(Filename)%(Extension)" />
+    <Reference Include="Grasshopper"><HintPath>$(GrasshopperDir)/Grasshopper.dll</HintPath></Reference>
+    <Reference Include="GH_IO"><HintPath>$(GrasshopperDir)/GH_IO.dll</HintPath></Reference>
+    <Reference Include="RhinoCommon"><HintPath>$(RhinoSystem)/RhinoCommon.dll</HintPath></Reference>
+    <Reference Include="Eto"><HintPath>$(RhinoSystem)/Eto.dll</HintPath></Reference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="fixtures/*.xml" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

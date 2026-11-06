@@ -1,0 +1,29 @@
+[
+  {
+    "id": "S_short_06",
+    "type": "linear",
+    "length": 0.6,
+    "width": 0.06,
+    "height": 0.08,
+    "material": "reclaimed timber, short",
+    "count": 40
+  },
+  {
+    "id": "S_short_09",
+    "type": "linear",
+    "length": 0.9,
+    "width": 0.06,
+    "height": 0.08,
+    "material": "reclaimed timber, short",
+    "count": 30
+  },
+  {
+    "id": "S_short_12",
+    "type": "linear",
+    "length": 1.2,
+    "width": 0.08,
+    "height": 0.12,
+    "material": "reclaimed timber, short",
+    "count": 20
+  }
+]

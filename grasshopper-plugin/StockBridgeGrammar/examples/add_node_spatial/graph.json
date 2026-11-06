@@ -1,0 +1,27 @@
+{
+  "source": "spatialAddNodeExample",
+  "nodes": [
+    {
+      "id": "N0",
+      "x": 0,
+      "y": 0,
+      "z": 0,
+      "isSupport": true
+    },
+    {
+      "id": "N1",
+      "x": 2,
+      "y": 0,
+      "z": 0,
+      "isSupport": true
+    },
+    {
+      "id": "N2",
+      "x": 0,
+      "y": 2,
+      "z": 0,
+      "isSupport": true
+    }
+  ],
+  "members": []
+}
